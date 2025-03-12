@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Desenvolvimento\\AuthService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\ireprefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\ireprefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\iservrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\iservrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\servrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\servrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IRepRefreshToken.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IRepRefreshToken.cs",
+              "RelativeDocumentMoniker": "Domain\\RefreshToken\\IRepRefreshToken.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IRepRefreshToken.cs",
+              "RelativeToolTip": "Domain\\RefreshToken\\IRepRefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T23:35:50.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IServRefreshToken.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IServRefreshToken.cs",
+              "RelativeDocumentMoniker": "Domain\\RefreshToken\\IServRefreshToken.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IServRefreshToken.cs",
+              "RelativeToolTip": "Domain\\RefreshToken\\IServRefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T23:35:49.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServRefreshToken.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\ServRefreshToken.cs",
+              "RelativeDocumentMoniker": "Domain\\RefreshToken\\ServRefreshToken.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\ServRefreshToken.cs",
+              "RelativeToolTip": "Domain\\RefreshToken\\ServRefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T23:35:45.398Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

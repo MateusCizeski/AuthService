@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\AuthService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\ireprefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\ireprefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|c:\\desenvolvimento\\authservice\\authservice\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|solutionrelative:authservice\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\iservrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\iservrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|c:\\desenvolvimento\\authservice\\authservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|solutionrelative:authservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|c:\\desenvolvimento\\authservice\\domain\\refreshtoken\\servrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6FB16EE-B959-486E-ADA2-AAE993E11960}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken\\servrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|c:\\desenvolvimento\\authservice\\authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3415960-B307-4EE5-B98B-1F714E753516}|AuthService\\AuthService.csproj|solutionrelative:authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C2EFE56-72CD-455D-B62D-B1844C0D6F22}|Infra\\Infra.csproj|c:\\desenvolvimento\\authservice\\infra\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C2EFE56-72CD-455D-B62D-B1844C0D6F22}|Infra\\Infra.csproj|solutionrelative:infra\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IRepRefreshToken.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IRepRefreshToken.cs",
-              "RelativeDocumentMoniker": "Domain\\RefreshToken\\IRepRefreshToken.cs",
-              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IRepRefreshToken.cs",
-              "RelativeToolTip": "Domain\\RefreshToken\\IRepRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T23:35:50.489Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\AuthService\\.gitignore",
+              "RelativeDocumentMoniker": "AuthService\\.gitignore",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\AuthService\\.gitignore",
+              "RelativeToolTip": "AuthService\\.gitignore",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-14T02:24:23.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IServRefreshToken.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IServRefreshToken.cs",
-              "RelativeDocumentMoniker": "Domain\\RefreshToken\\IServRefreshToken.cs",
-              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\IServRefreshToken.cs",
-              "RelativeToolTip": "Domain\\RefreshToken\\IServRefreshToken.cs",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\AuthService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AuthService\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\AuthService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AuthService\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T23:35:49.504Z",
+              "WhenOpened": "2025-03-14T02:20:24.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServRefreshToken.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\ServRefreshToken.cs",
-              "RelativeDocumentMoniker": "Domain\\RefreshToken\\ServRefreshToken.cs",
-              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Domain\\RefreshToken\\ServRefreshToken.cs",
-              "RelativeToolTip": "Domain\\RefreshToken\\ServRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthService\\Program.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\AuthService\\Program.cs",
+              "RelativeToolTip": "AuthService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T23:35:45.398Z",
+              "WhenOpened": "2025-03-14T02:20:10.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\AuthService\\Infra\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infra\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Desenvolvimento\\AuthService\\Infra\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infra\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T02:14:59.748Z",
               "EditorCaption": ""
             }
           ]

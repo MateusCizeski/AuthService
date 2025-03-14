@@ -40,7 +40,9 @@ packages/
 # Configurações do Banco de Dados e Migrations do EF Core
 Migrations/
 app.db
+appsettings.*.json
 appsettings.local.json
+appsettings.json
 
 # Arquivos de Publicação e Deployment
 publish/

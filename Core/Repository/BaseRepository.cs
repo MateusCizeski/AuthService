@@ -31,9 +31,9 @@ namespace Core.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(T entity)
+        public async Task DeleteAsync(Guid id)
         {
-            _dbSet.Remove(entity);
+            _dbSet.Remove(id);
             await _context.SaveChangesAsync();
         }
     }

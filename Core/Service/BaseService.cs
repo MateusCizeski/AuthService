@@ -19,6 +19,6 @@ namespace Core.Service
 
         public async Task UpdateAsync(T entity) => await _repository.UpdateAsync(entity);
 
-        public async Task DeleteAsync(T entity) => await _repository.DeleteAsync(entity);
+        public async Task DeleteAsync(Guid id) => await _repository.DeleteAsync(id);
     }
 }

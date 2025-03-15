@@ -17,9 +17,9 @@ namespace Core.Application
            return _baseService.AddAsync(entity);
         }
 
-        public Task DeleteAsync(T entity)
+        public Task DeleteAsync(Guid id)
         {
-            return _baseService.DeleteAsync(entity);
+            return _baseService.DeleteAsync(id);
         }
 
         public Task<IEnumerable<T>> GetAllAsync()

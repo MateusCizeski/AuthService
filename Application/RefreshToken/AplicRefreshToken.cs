@@ -7,7 +7,7 @@ namespace Application
     {
         private readonly IServRefreshToken _servRefreshToken;
 
-        public AplicRefreshToken(ServRefreshToken servRefreshToken) : base(servRefreshToken)
+        public AplicRefreshToken(IServRefreshToken servRefreshToken) : base(servRefreshToken)
         {
             _servRefreshToken = servRefreshToken;
         }

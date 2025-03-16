@@ -1,15 +1,14 @@
-﻿
-using System.Collections.Generic;
-using System;
+﻿using Infra;
+using Microsoft.EntityFrameworkCore;
 
 namespace Core.Repository
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        protected readonly AppDbContext _context;
+        protected readonly ApplicationDbContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public BaseRepository(AppDbContext context)
+        public BaseRepository(ApplicationDbContext context)
         {
             _context = context;
             _dbSet = context.Set<T>();
@@ -33,7 +32,9 @@ namespace Core.Repository
 
         public async Task DeleteAsync(Guid id)
         {
-            _dbSet.Remove(id);
+            var entity = await GetByIdAsync(id);
+
+            _dbSet.Remove(entity);
             await _context.SaveChangesAsync();
         }
     }

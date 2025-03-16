@@ -1,7 +1,7 @@
 ﻿using Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Persistence
+namespace Infra
 {
     public class ApplicationDbContext : DbContext
     {

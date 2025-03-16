@@ -7,7 +7,7 @@ namespace Application
     {
         private readonly IServUser _servUser;
 
-        public AplicUser(ServUser servUser) : base(servUser)
+        public AplicUser(IServUser servUser) : base(servUser)
         {
             _servUser = servUser;
         }

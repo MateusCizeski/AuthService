@@ -1,0 +1,5 @@
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.sourcelink.json

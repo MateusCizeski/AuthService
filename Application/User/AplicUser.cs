@@ -1,15 +1,16 @@
-﻿using Core.Application;
+﻿using Core;
 using Domain;
+using Repository;
 
 namespace Application
 {
     public class AplicUser : BaseApplication<User>, IAplicUser
     {
-        private readonly IServUser _servUser;
+        private readonly IRepUser _repUser;
 
-        public AplicUser(IServUser servUser) : base(servUser)
+        public AplicUser(IRepUser repUser) : base(repUser)
         {
-            _servUser = servUser;
+            _repUser = repUser;
         }
     }
 }

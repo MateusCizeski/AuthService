@@ -1,4 +1,4 @@
-﻿using Core.Repository;
+﻿using Core;
 using Domain;
 using Infra;
 

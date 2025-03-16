@@ -15,8 +15,29 @@ namespace Infra
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<User>()
-                .HasIndex(u => u.Email)
-                .IsUnique();
+                   .ToTable("user")
+                   .HasIndex(u => u.Id)
+                   .IsUnique();
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Id)
+                .HasColumnName("id");
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Name)
+                .HasColumnName("name");
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Email)
+                .HasColumnName("email");
+            
+            modelBuilder.Entity<User>()
+                .Property(u => u.Password)
+                .HasColumnName("password");
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.EmailConfirmed)
+                .HasColumnName("emailconfirmed");
         }
     }
 }

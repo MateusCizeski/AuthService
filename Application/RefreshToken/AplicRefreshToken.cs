@@ -1,15 +1,16 @@
-﻿using Core.Application;
+﻿using Core;
 using Domain;
+using Repository;
 
 namespace Application
 {
     public class AplicRefreshToken : BaseApplication<RefreshToken>, IAplicRefreshToken
     {
-        private readonly IServRefreshToken _servRefreshToken;
+        private readonly IRepRefreshToken _repRefreshToken;
 
-        public AplicRefreshToken(IServRefreshToken servRefreshToken) : base(servRefreshToken)
+        public AplicRefreshToken(IRepRefreshToken repRefreshToken) : base(repRefreshToken)
         {
-            _servRefreshToken = servRefreshToken;
+            _repRefreshToken = repRefreshToken;
         }
     }
 }

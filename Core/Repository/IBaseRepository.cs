@@ -1,4 +1,4 @@
-﻿namespace Core.Repository
+﻿namespace Core
 {
     public interface IBaseRepository<T> where T : class
     {

@@ -34,9 +34,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Desenvolvimento\\AuthService\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Desenvolvimento\\AuthService\\Domain\\Domain.csproj"
-              },
               "C:\\Desenvolvimento\\AuthService\\Infra\\Infra.csproj": {
                 "projectPath": "C:\\Desenvolvimento\\AuthService\\Infra\\Infra.csproj"
               }
@@ -214,6 +211,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -271,6 +272,9 @@
               },
               "C:\\Desenvolvimento\\AuthService\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Desenvolvimento\\AuthService\\Domain\\Domain.csproj"
+              },
+              "C:\\Desenvolvimento\\AuthService\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\AuthService\\Infra\\Infra.csproj"
               }
             }
           }

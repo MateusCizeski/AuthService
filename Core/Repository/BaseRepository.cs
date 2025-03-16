@@ -1,7 +1,7 @@
 ﻿using Infra;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.Repository
+namespace Core
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {

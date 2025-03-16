@@ -1,9 +1,12 @@
 ﻿using Application;
-using Core.Controller;
+using Core;
 using Domain;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AuthService.Controllers
 {
+    [ApiController]
+    [Route("api/v1/token")]
     public class RefreshTokenController : BaseController<RefreshToken, IAplicRefreshToken>
     {
         private readonly IAplicRefreshToken _aplicRefreshToken;

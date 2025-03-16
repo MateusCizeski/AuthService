@@ -1,9 +1,7 @@
-﻿using Core.Application;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Core.Controller
+namespace Core
 {
-    [ApiController]
     public class BaseController<TEntity, TService> : ControllerBase where TEntity : class where TService : IBaseApplication<TEntity>
     {
         protected readonly TService _service;

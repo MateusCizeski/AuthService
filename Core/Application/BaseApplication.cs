@@ -1,13 +1,10 @@
-﻿using Core.Repository;
-using Core.Service;
-
-namespace Core.Application
+﻿namespace Core
 {
     public class BaseApplication<T> : IBaseRepository<T> where T : class
     {
-        private readonly IBaseService<T> _baseService;
+        private readonly IBaseRepository<T> _baseService;
 
-        public BaseApplication(IBaseService<T> baseService)
+        public BaseApplication(IBaseRepository<T> baseService)
         {
             _baseService = baseService;
         }

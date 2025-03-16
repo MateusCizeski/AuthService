@@ -1,4 +1,4 @@
-﻿namespace Core.Application
+﻿namespace Core
 {
     public interface IBaseApplication<T> where T : class
     {

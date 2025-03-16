@@ -1,4 +1,4 @@
-﻿using Core.Application;
+﻿using Core;
 using Domain;
 
 namespace Application

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A5AFBB3Uceo=",
+  "dgSpecHash": "drfatpMVMeA=",
   "success": true,
   "projectFilePath": "C:\\Desenvolvimento\\AuthService\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -25,9 +25,10 @@
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.3\\microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.3\\microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.3\\microsoft.entityframeworkcore.analyzers.9.0.3.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.1\\microsoft.entityframeworkcore.relational.9.0.1.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
-    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
@@ -43,6 +44,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",

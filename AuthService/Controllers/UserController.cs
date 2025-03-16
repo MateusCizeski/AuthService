@@ -1,10 +1,11 @@
 ﻿using Application;
-using Core.Controller;
+using Core;
 using Domain;
-using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AuthService.Controllers
 {
+    [ApiController]
     [Route("api/v1/user")]
     public class UserController : BaseController<User, IAplicUser>
     {

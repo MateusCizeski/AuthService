@@ -26,16 +26,6 @@ namespace Core
             return Ok(entity);
         }
 
-        [HttpPost]
-        public virtual async Task<ActionResult<TEntity>> Create([FromBody] TEntity entity)
-        {
-            if (entity == null) return BadRequest();
-
-            await _service.AddAsync(entity);
-
-            return Ok();
-        }
-
         [HttpPut]
         public virtual async Task<ActionResult> Update([FromBody] TEntity entity)
         {

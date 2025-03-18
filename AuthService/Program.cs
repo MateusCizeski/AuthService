@@ -17,6 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IAplicUser, AplicUser>();
 builder.Services.AddScoped<IRepUser, RepUser>();
+builder.Services.AddScoped<IMapperUser, MapperUser>();
 
 builder.Services.AddScoped<IRepRefreshToken, RepRefreshToken>();
 builder.Services.AddScoped<IAplicRefreshToken, AplicRefreshToken>();

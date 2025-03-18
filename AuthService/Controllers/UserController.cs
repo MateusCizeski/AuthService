@@ -15,5 +15,19 @@ namespace AuthService.Controllers
         {
             _aplicUser = aplicUser;
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Create([FromBody] CreateUserDTO dto)
+        {
+            try
+            {
+                _aplicUser.AddAsync(dto);
+
+                return Ok();
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

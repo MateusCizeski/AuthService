@@ -25,23 +25,5 @@ namespace Core
             if (entity == null) return NotFound();
             return Ok(entity);
         }
-
-        [HttpPut]
-        public virtual async Task<ActionResult> Update([FromBody] TEntity entity)
-        {
-            if (entity == null) return BadRequest();
-
-            await _service.UpdateAsync(entity);
-
-            return Ok();
-        }
-
-        [HttpDelete("{id}")]
-        public virtual async Task<ActionResult> Delete([FromRoute] Guid id)
-        {
-            await _service.DeleteAsync(id);
-
-            return Ok();
-        }
     }
 }

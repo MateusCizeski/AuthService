@@ -23,7 +23,8 @@ namespace Application
             var hashPassword = PasswordHasher.HashPassword(user.Password);
 
             user.Password = hashPassword;
-            _repUser.AddAsync(user);
+
+            _repUser.CreateUser(user);
         }
     }
 }

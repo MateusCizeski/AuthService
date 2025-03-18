@@ -1,4 +1,5 @@
 C:\Desenvolvimento\AuthService\Infra\bin\Debug\net8.0\Infra.deps.json
+C:\Desenvolvimento\AuthService\Infra\bin\Debug\net8.0\Infra.runtimeconfig.json
 C:\Desenvolvimento\AuthService\Infra\bin\Debug\net8.0\Infra.dll
 C:\Desenvolvimento\AuthService\Infra\bin\Debug\net8.0\Infra.pdb
 C:\Desenvolvimento\AuthService\Infra\bin\Debug\net8.0\Domain.dll
@@ -13,4 +14,5 @@ C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\Infra.csproj.Up2Date
 C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\Infra.dll
 C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\refint\Infra.dll
 C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\Infra.pdb
+C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\Infra.genruntimeconfig.cache
 C:\Desenvolvimento\AuthService\Infra\obj\Debug\net8.0\ref\Infra.dll

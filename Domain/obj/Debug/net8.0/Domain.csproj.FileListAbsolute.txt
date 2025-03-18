@@ -1,4 +1,5 @@
 C:\Desenvolvimento\AuthService\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Desenvolvimento\AuthService\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
 C:\Desenvolvimento\AuthService\Domain\bin\Debug\net8.0\Domain.dll
 C:\Desenvolvimento\AuthService\Domain\bin\Debug\net8.0\Domain.pdb
 C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
@@ -9,4 +10,5 @@ C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.sourcelink.json
 C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.dll
 C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 C:\Desenvolvimento\AuthService\Domain\obj\Debug\net8.0\ref\Domain.dll

@@ -15,7 +15,7 @@ namespace Infra
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<User>()
-                   .ToTable("user")
+                   .ToTable("authuser")
                    .HasIndex(u => u.Id)
                    .IsUnique();
 
@@ -30,7 +30,7 @@ namespace Infra
             modelBuilder.Entity<User>()
                 .Property(u => u.Email)
                 .HasColumnName("email");
-            
+
             modelBuilder.Entity<User>()
                 .Property(u => u.Password)
                 .HasColumnName("password");

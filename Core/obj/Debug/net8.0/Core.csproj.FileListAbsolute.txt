@@ -1,4 +1,5 @@
 C:\Desenvolvimento\AuthService\Core\bin\Debug\net8.0\Core.deps.json
+C:\Desenvolvimento\AuthService\Core\bin\Debug\net8.0\Core.runtimeconfig.json
 C:\Desenvolvimento\AuthService\Core\bin\Debug\net8.0\Core.dll
 C:\Desenvolvimento\AuthService\Core\bin\Debug\net8.0\Core.pdb
 C:\Desenvolvimento\AuthService\Core\bin\Debug\net8.0\Domain.dll
@@ -15,4 +16,5 @@ C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\Core.csproj.Up2Date
 C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\Core.dll
 C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\Core.pdb
+C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
 C:\Desenvolvimento\AuthService\Core\obj\Debug\net8.0\ref\Core.dll

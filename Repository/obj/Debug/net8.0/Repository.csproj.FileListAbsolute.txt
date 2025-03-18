@@ -1,4 +1,5 @@
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Repository.runtimeconfig.json
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Repository.dll
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Repository.pdb
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Core.dll
@@ -17,4 +18,5 @@ C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.csproj.Up2
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.dll
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\ref\Repository.dll

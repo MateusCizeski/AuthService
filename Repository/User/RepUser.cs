@@ -21,5 +21,17 @@ namespace Repository
             _context.Users.Add(user);
             _context.SaveChanges();
         }
+
+        public User GetUser(SessionUserDTO dto)
+        {
+            var user = _context.Users.Where(u => u.Email == dto.Email).FirstOrDefault();
+
+            if(user == null)
+            {
+                throw new Exception("Email/Password incorrect.");
+            }
+
+            return user;
+        }
     }
 }

@@ -6,5 +6,6 @@ namespace Application
     public interface IAplicUser : IBaseApplication<User>
     {
         void AddAsync(CreateUserDTO dto);
+        ReturnSessionDTO Session(SessionUserDTO dto);
     }
 }

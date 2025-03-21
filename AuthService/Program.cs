@@ -18,6 +18,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<JwtService>();
+
 builder.Services.AddScoped<IAplicUser, AplicUser>();
 builder.Services.AddScoped<IRepUser, RepUser>();
 builder.Services.AddScoped<IMapperUser, MapperUser>();

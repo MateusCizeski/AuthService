@@ -17,6 +17,7 @@ namespace AuthService.Controllers
         }
 
         [HttpPost]
+        [Route("Create")]
         public async Task<ActionResult> Create([FromBody] CreateUserDTO dto)
         {
             try
@@ -25,6 +26,22 @@ namespace AuthService.Controllers
 
                 return Ok();
             }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("Session")]
+        public async Task<ActionResult> Session([FromBody] SessionUserDTO dto)
+        {
+            try
+            {
+                var retorno = _aplicUser.Session(dto);
+
+                return Ok(retorno);
+            }
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }

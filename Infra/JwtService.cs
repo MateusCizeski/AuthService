@@ -1,63 +1,52 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
 
-namespace Infra
+namespace Infra;
+
+public class JwtService
 {
-    public class JwtService
+    private readonly byte[] _secretKey;
+    private readonly string _issuer;
+    private readonly string _audience;
+    private readonly int _expireMinutes;
+
+    public JwtService(IConfiguration config)
     {
-        private readonly SymmetricSecurityKey _securityKey;
-        private readonly string _issuer;
-        private readonly string _audience;
-        private readonly int _expireMinutes;
 
-        public JwtService(IConfiguration configuration)
+        var base64Key = config["Jwt:Key"]!;
+        _secretKey = Convert.FromBase64String(base64Key);
+
+        _issuer = config["Jwt:Issuer"]!;
+        _audience = config["Jwt:Audience"]!;
+        _expireMinutes = config.GetValue<int>("Jwt:ExpirationMinutes");
+    }
+
+    public string GenerateToken(string username)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = new SymmetricSecurityKey(_secretKey);
+
+        var claims = new[]
         {
-            if (configuration == null)
-                throw new ArgumentNullException(nameof(configuration));
+            new Claim(ClaimTypes.Name, username),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        };
 
-            var secretKey = configuration["Jwt:Key"] ?? throw new Exception("Chave JWT não encontrada.");
-
-            Console.WriteLine($"Chave JWT lida: {secretKey}");
-
-            try
-            {
-                byte[] keyBytes = Convert.FromBase64String(secretKey.Trim());
-                _securityKey = new SymmetricSecurityKey(keyBytes);
-                Console.WriteLine("Chave decodificada como Base64 com sucesso.");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Falha ao decodificar Base64. Usando chave como texto puro.");
-                _securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
-            }
-
-            _issuer = configuration["Jwt:Issuer"] ?? throw new Exception("Issuer não configurado.");
-            _audience = configuration["Jwt:Audience"] ?? throw new Exception("Audience não configurado.");
-            _expireMinutes = configuration.GetValue<int>("Jwt:ExpirationMinutes");
-        }
-
-        public string GenerateJwtToken(string username)
+        var tokenDescriptor = new SecurityTokenDescriptor
         {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.Name, username),
-            };
+            Issuer = _issuer,
+            Audience = _audience,
+            Subject = new ClaimsIdentity(claims),
+            Expires = DateTime.UtcNow.AddMinutes(_expireMinutes),
+            SigningCredentials = new SigningCredentials(
+                key,
+                SecurityAlgorithms.HmacSha256Signature
+            )
+        };
 
-            var credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: _issuer,
-                audience: _audience,
-                claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(_expireMinutes),
-                signingCredentials: credentials
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
     }
 }

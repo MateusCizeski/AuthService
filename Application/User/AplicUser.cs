@@ -34,14 +34,15 @@ namespace Application
         {
             var user = _repUser.GetUser(dto);
             var hasher = new PasswordHasher<object>();
-            var passwordMatch = hasher.VerifyHashedPassword(null, user.Password, dto.Password);
+            
+            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
 
-            if (passwordMatch != PasswordVerificationResult.Success)
+            if (!isPasswordValid)
             {
                 throw new Exception("Senha incorreta.");
             }
 
-            var token = _jwtService.GenerateJwtToken(user.Name);
+            var token = _jwtService.GenerateToken(user.Name);
 
             return new ReturnSessionDTO
             {

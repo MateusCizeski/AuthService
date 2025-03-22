@@ -33,5 +33,23 @@ namespace Repository
 
             return user;
         }
+
+        public User UserById(Guid id)
+        {
+            var user = _context.Users.Where(u => u.Id == id).FirstOrDefault();
+
+            if(user == null)
+            {
+                throw new Exception("user not exists.");
+            }
+
+            return user;
+        }
+
+        public void EditUser(User user)
+        {
+            _context.Users.Update(user);
+            _context.SaveChanges();
+        }
     }
 }

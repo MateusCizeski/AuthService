@@ -4,6 +4,9 @@ namespace Application
 {
     public interface IMapperUser
     {
-        User Novo(CreateUserDTO dto);
+        User MapperCreate(CreateUserDTO dto);
+        ReturnSessionDTO MapperReturnSession(User user, string token);
+        void MapperEditing(User user, EditUserDTO dto);
+        DetailUserDTO MapperDetailUser(User user);
     }
 }

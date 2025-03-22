@@ -7,5 +7,7 @@ namespace Repository
     {
         void CreateUser(User user);
         User GetUser(SessionUserDTO dto);
+        User UserById(Guid id);
+        void EditUser(User user);
     }
 }

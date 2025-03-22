@@ -8,6 +8,7 @@ namespace Application
 {
     public class AplicUser : BaseApplication<User>, IAplicUser
     {
+        #region Ctor
         private readonly IRepUser _repUser;
         private readonly IMapperUser _mapperUser;
         private readonly JwtService _jwtService;
@@ -18,10 +19,12 @@ namespace Application
             _mapperUser = mapperUSer;
             _jwtService = jwtService;
         }
+        #endregion
 
-        public void AddAsync(CreateUserDTO dto)
+        #region Create
+        public void Create(CreateUserDTO dto)
         {
-            var user = _mapperUser.Novo(dto);
+            var user = _mapperUser.MapperCreate(dto);
 
             var hashPassword = PasswordHasher.HashPassword(user.Password);
 
@@ -29,7 +32,9 @@ namespace Application
 
             _repUser.CreateUser(user);
         }
+        #endregion
 
+        #region Session
         public ReturnSessionDTO Session(SessionUserDTO dto)
         {
             var user = _repUser.GetUser(dto);
@@ -44,13 +49,25 @@ namespace Application
 
             var token = _jwtService.GenerateToken(user.Name);
 
-            return new ReturnSessionDTO
-            {
-                Id = user.Id,
-                Name = user.Name,
-                Email = user.Email,
-                token = token
-            };
+            return _mapperUser.MapperReturnSession(user, token);
+        }
+        #endregion
+
+        #region Edit
+        public void Edit(Guid id, EditUserDTO dto)
+        {
+            var user = _repUser.UserById(id);
+
+            _mapperUser.MapperEditing(user, dto);
+            _repUser.EditUser(user);
+        }
+        #endregion
+
+        public DetailUserDTO DetailUser(Guid id)
+        {
+            var user = _repUser.UserById(id);
+
+            return _mapperUser.MapperDetailUser(user);
         }
     }
 }

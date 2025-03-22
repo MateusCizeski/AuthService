@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -8,38 +9,55 @@ namespace Infra
 {
     public class JwtService
     {
-        private readonly IConfiguration _config;
+        private readonly SymmetricSecurityKey _securityKey;
+        private readonly string _issuer;
+        private readonly string _audience;
+        private readonly int _expireMinutes;
 
-        public JwtService(IConfiguration config)
+        public JwtService(IConfiguration configuration)
         {
-            _config = config;
+            if (configuration == null)
+                throw new ArgumentNullException(nameof(configuration));
+
+            var secretKey = configuration["Jwt:Key"] ?? throw new Exception("Chave JWT não encontrada.");
+
+            Console.WriteLine($"Chave JWT lida: {secretKey}");
+
+            try
+            {
+                byte[] keyBytes = Convert.FromBase64String(secretKey.Trim());
+                _securityKey = new SymmetricSecurityKey(keyBytes);
+                Console.WriteLine("Chave decodificada como Base64 com sucesso.");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Falha ao decodificar Base64. Usando chave como texto puro.");
+                _securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
+            }
+
+            _issuer = configuration["Jwt:Issuer"] ?? throw new Exception("Issuer não configurado.");
+            _audience = configuration["Jwt:Audience"] ?? throw new Exception("Audience não configurado.");
+            _expireMinutes = configuration.GetValue<int>("Jwt:ExpirationMinutes");
         }
 
-        public string GenerateToken(Guid userId, string username)
+        public string GenerateJwtToken(string username)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
-                new Claim(JwtRegisteredClaimNames.UniqueName, username),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(ClaimTypes.Name, username),
             };
 
+            var credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
+
             var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
+                issuer: _issuer,
+                audience: _audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(_config["Jwt:ExpirationMinutes"])),
+                expires: DateTime.UtcNow.AddMinutes(_expireMinutes),
                 signingCredentials: credentials
             );
 
-           
-            var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-
-            return tokenString;
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
     }
 }

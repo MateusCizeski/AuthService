@@ -1,4 +1,22 @@
-﻿# Compilação
+﻿# Ignorar arquivos de build para todos os projetos
+bin/
+obj/
+
+# Ignorar DLLs compiladas
+*.dll
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de debug e de configuração do Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Compilação
 bin/
 obj/
 *.exe
@@ -63,3 +81,19 @@ coverage/
 *.trx
 *.coverage
 .coveragexml
+
+# Ignorar arquivos de build
+bin/
+obj/
+
+# Ignorar arquivos de debug e logs
+*.log
+*.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar DLLs compiladas
+*.dll

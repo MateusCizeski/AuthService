@@ -41,7 +41,7 @@ namespace Application
                 throw new Exception("Senha incorreta.");
             }
 
-            var token = _jwtService.GenerateToken(user.Id, user.Name);
+            var token = _jwtService.GenerateJwtToken(user.Name);
 
             return new ReturnSessionDTO
             {

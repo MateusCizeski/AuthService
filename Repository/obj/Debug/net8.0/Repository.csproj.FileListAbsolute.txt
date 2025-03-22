@@ -5,9 +5,9 @@ C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Repository.pdb
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Core.dll
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Domain.dll
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Infra.dll
-C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Core.pdb
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Domain.pdb
 C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Infra.pdb
+C:\Desenvolvimento\AuthService\Repository\bin\Debug\net8.0\Core.pdb
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\AuthService\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache

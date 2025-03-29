@@ -19,7 +19,7 @@ namespace AuthService.Controllers
         #region Create
         [HttpPost]
         [Route("Create")]
-        public ActionResult Create([FromBody] CreateUserDTO dto)
+        public IActionResult Create([FromBody] CreateUserDTO dto)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace AuthService.Controllers
         #region Session
         [HttpPost]
         [Route("Session")]
-        public ActionResult Session([FromBody] SessionUserDTO dto)
+        public IActionResult Session([FromBody] SessionUserDTO dto)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace AuthService.Controllers
         #region Edit
         [HttpPut]
         [Route("Edit/{id}")]
-        public ActionResult Edit([FromRoute] Guid id, [FromBody] EditUserDTO dto)
+        public IActionResult Edit([FromRoute] Guid id, [FromBody] EditUserDTO dto)
         {
             try
             {
@@ -71,7 +71,7 @@ namespace AuthService.Controllers
 
         [HttpPut]
         [Route("DetailUser/{id}")]
-        public ActionResult DetailUser(Guid id)
+        public IActionResult DetailUser(Guid id)
         {
             try
             {
